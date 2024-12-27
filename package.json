@@ -1,13 +1,13 @@
 {
   "name": "@klypt/prisma-adapter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",
     "prepare": "npm run build",
-    "postinstall": "node ./scripts/setup.ts",
+    "postinstall": "node ./scripts/setup.ts -- $npm_config_with_auth",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
