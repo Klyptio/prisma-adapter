@@ -1,5 +1,5 @@
-import { PrismaAdapter } from '@next-boilerplate/prisma-adapter';
-import { databaseConfig } from '@/app/_config/database.config';
+import { PrismaAdapter } from "@klypt/prisma-adapter";
+import { databaseConfig } from "@/app/_config/database.config";
 
 let dbInstance: PrismaAdapter | null = null;
 

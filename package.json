@@ -1,5 +1,5 @@
 {
-  "name": "@next-boilerplate/prisma-adapter",
+  "name": "@klypt/prisma-adapter",
   "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -7,7 +7,7 @@
     "build": "tsc",
     "clean": "rimraf dist",
     "prepare": "npm run build",
-    "postinstall": "node ./scripts/setup.js",
+    "postinstall": "node ./scripts/setup.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
@@ -28,5 +28,24 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klyptio/prisma-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Klyptio/prisma-adapter/issues"
+  },
+  "homepage": "https://github.com/Klyptio/prisma-adapter/#readme",
+  "keywords": [
+    "prisma",
+    "orm",
+    "nextjs"
+  ],
+  "author": "Priyajit Mukherjee",
+  "license": "MIT",
+  "description": "A robust Prisma adapter for Next.js applications with built-in support for connection pooling, read replicas, caching, and performance monitoring."
 }

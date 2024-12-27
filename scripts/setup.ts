@@ -19,17 +19,17 @@ function setupPrisma() {
   // Copy template files
   const templates = [
     {
-      src: '../templates/schema.prisma',
-      dest: 'prisma/schema.prisma'
+      src: "../templates/schema.prisma",
+      dest: "prisma/schema.prisma",
     },
     {
-      src: '../templates/db/index.ts',
-      dest: 'src/app/_lib/db/index.ts'
+      src: "../templates/db/index.ts.template",
+      dest: "src/app/_lib/db/index.ts",
     },
     {
-      src: '../templates/db/types.ts',
-      dest: 'src/app/_lib/db/types.ts'
-    }
+      src: "../templates/db/types.ts.template",
+      dest: "src/app/_lib/db/types.ts",
+    },
   ];
 
   templates.forEach(({ src, dest }) => {
